@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace Aqua.Models
 {
-    public class Class
+    public interface IRybkaRepository
     {
+        IQueryable<Rybka> Rybki { get; }
     }
 }
