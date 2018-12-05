@@ -2,7 +2,31 @@
 
 @foreach (var p in Model)
 {
-    <div>
-        <h3>@p.Nazwa</h3>
+    <div class="card card-outline-primary m-1 p-1">
+        <div class="bg-faded p-1">
+            <h2>@p.Nazwa</h2>
+            <div class="feature-img">
+                <a href="images/ameka-wspaniala-ameca-splendens-butterfly-goodeid.jpg" data-imagelightbox="a"
+                   title="Ameka wspaniała - ryba akwariowa fot. lebendgebaerende.info by EW"
+                   alt="Ameka wspaniała - Ameca splendens">
+                    <img src="images/ameka-wspaniala-ameca-splendens-butterfly-goodeid-625x300.jpg"
+                         alt="Ameka wspaniała - ryba akwariowa fot. lebendgebaerende.info by EW"
+                         title="Ameka wspaniała - Ameca splendens" />
+                </a>
+            </div>
+            @Html.Raw(@p.Opis)
+            <h3>Pochodzenie</h3>
+            @Html.Raw(@p.PochodzenieOpis)
+            <h3>Charakterystyka</h3>
+            @Html.Raw(@p.CharakterystykaOpis)
+            <h3>Odżywianie</h3>
+            @Html.Raw(@p.OdzywianieOpis)
+            <h3>Akwarium</h3>
+            @Html.Raw(@p.AkwariumOpis)
+            <h3>Rozmnażanie</h3>
+            @Html.Raw(@p.RozmnazanieOpis)
+            <h3>Video</h3>
+            <h3>Galeria</h3>
+        </div>
     </div>
 }
